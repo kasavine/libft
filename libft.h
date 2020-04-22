@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 13:05:55 by isak              #+#    #+#             */
-/*   Updated: 2020/04/21 16:31:28 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/21 17:15:50 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,10 @@ int				ft_tolower(int c);
 
 //1
 
-//1
-//2
-//3
-//4
+void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(char const *s, int fd);
+void			ft_putendl_fd(char const *s, int fd);
+void			ft_putnbr_fd(int n, int fd);
 
 /* Bonus */
 
