@@ -2,8 +2,8 @@
 Re-writing highly useful standard functions, C language.
 | Part 1  |  Part 2 |  Bonus | Additional |
 |---|---|---|---|
-| ft_memSET  | ft_strMAPi  | ft_lstNEW  |   |
-| ft_bzero | ft_SUBstr  | ft_lstADD_front |   |
+| ft_memSET  | ft_strMAPi  | ft_lstNEW  | ft_strcat |
+| ft_bzero | ft_SUBstr  | ft_lstADD_front | ft_strcpy |
 | ft_memCPY | ft_strJOIN | ft_lstSIZE  |   |
 | ft_memCCPY | ft_strTRIM  | ft_lstLAST  |   |
 | ft_memMOVE | ft_strSPLIT | ft_lstADD_back  |   |
