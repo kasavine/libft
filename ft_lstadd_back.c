@@ -1,35 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/23 14:53:28 by isak              #+#    #+#             */
-/*   Updated: 2020/04/23 15:24:41 by isak             ###   ########.fr       */
+/*   Created: 2020/04/23 15:09:27 by isak              #+#    #+#             */
+/*   Updated: 2020/04/23 15:24:48 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-**	Counts the number of elements in a list.
+**	Adds the element ’new’ at the end of the list.
 **
-**	int ft_lstsize(t_list *lst);
-**		#1.  The beginning of the list.
-**
-**	Return value - Length of the list.
+**	void ft_lstadd_back(t_list **lst, t_list *new);
+**		#1.  The address of a pointer to the first link of a list.
+**		#2.  The address of a pointer to the element to be added to the list.
 */
 
 #include "libft.h"
 
-int		ft_lstsize(t_list *lst)
+void		t_lstadd_back(t_list **lst, t_list *new)
 {
-	int	count_elem;
+	t_list	*last_elem;
 
-	count_elem = 0;
-	while (lst)
+	if (new == NULL)
+		return ;
+	if (lst == NULL)
 	{
-		lst = lst->next;
-		count_elem++;
+		*lst = new;
+		return ;
 	}
-	return (count_elem);
+	last_elem = ft_lstlast(*lst);
+	last_elem->next = new;
 }

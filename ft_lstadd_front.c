@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/23 14:42:07 by isak              #+#    #+#             */
-/*   Updated: 2020/04/23 14:59:00 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 15:24:47 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if(new == NULL)
+	if (new == NULL)
 		return ;
-	if (!lst)
+	if (lst == NULL)
 	{
 		*lst = new;
 		return ;

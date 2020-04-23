@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/23 14:33:02 by isak              #+#    #+#             */
-/*   Updated: 2020/04/23 14:59:20 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 15:24:44 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ t_list		*ft_lstnew(void *content)
 	t_list	*new_elem;
 
 	new_elem = (t_list *)malloc(sizeof(t_list));
-	if(!new_elem)
-		return(NULL);
+	if (!new_elem)
+		return (NULL);
 	new_elem->content = content;
 	new_elem->next = NULL;
-	return(new_elem);
+	return (new_elem);
 }
