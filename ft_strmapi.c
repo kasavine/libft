@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:08:17 by isak              #+#    #+#             */
-/*   Updated: 2020/04/23 13:42:02 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 14:08:13 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,14 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	i = 0;
-	fresh_new = ft_strnew(ft_strlen(s));
+	fresh_new = ft_strdup(s);
 	if (fresh_new == NULL)
 		return (NULL);
-	while (s[i])
+	while (fresh_new[i])
 	{
-		fresh_new[i] = (*f)(i, s[i]);
+		fresh_new[i] = (*f)(i, fresh_new[i]);
 		i++;
 	}
+	fresh_new[i] = '\0';
 	return (fresh_new);
 }
