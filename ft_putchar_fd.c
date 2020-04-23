@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 09:42:00 by isak              #+#    #+#             */
-/*   Updated: 2020/04/21 17:06:29 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 13:41:15 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 **	void ft_putchar_fd(char c, int fd);
 **		#1.  The character to output.
 **		#2.  The file descriptor on which to write.
+**
+**	External functs - write
 */
 
 #include "libft.h"

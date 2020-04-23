@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 12:38:04 by isak              #+#    #+#             */
-/*   Updated: 2020/04/21 15:52:04 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 13:44:38 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 **		subsequently be used as an argument to the function free(3).
 **		If insufficient memory is available, NULL is returned and errno is
 **		set to ENOMEM.
+**
+**	External functs - malloc
 */
 
 #include "libft.h"

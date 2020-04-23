@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:06:47 by isak              #+#    #+#             */
-/*   Updated: 2020/04/23 10:53:50 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 13:43:45 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 **		#2.  The suffix string.
 **
 **	Return value - The new string.  NULL if the allocation fails.
+**
+**	External functs - malloc
 */
 
 #include "libft.h"

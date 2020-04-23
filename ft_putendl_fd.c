@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:04:04 by isak              #+#    #+#             */
-/*   Updated: 2020/04/21 17:14:26 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 13:40:40 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 **	void ft_putendl_fd(char *s, int fd);
 **		#1.  The string to output.
 **		#2.  The file descriptor on which to write.
+**
+**	External functs - write
 */
 
 #include "libft.h"

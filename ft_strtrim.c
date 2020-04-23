@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:06:28 by isak              #+#    #+#             */
-/*   Updated: 2020/04/23 10:53:39 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 13:43:15 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 **		#2.  The reference set of characters to trim.
 **
 **	Return value - The trimmed string.  NULL if the allocation fails.
+**
+**	External functs - malloc
 */
 
 #include "libft.h"

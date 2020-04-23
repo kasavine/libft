@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:07:19 by isak              #+#    #+#             */
-/*   Updated: 2020/04/22 10:29:16 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 13:44:03 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 **		#3.  The maximum length of the substring.
 **
 **	Return value - The substring.  NULL if the allocation fails.
+**
+**	External functs - malloc
 */
 
 #include "libft.h"

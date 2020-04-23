@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:03:27 by isak              #+#    #+#             */
-/*   Updated: 2020/04/21 17:14:45 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 13:40:17 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 **	void ft_putnbr_fd(int n, int fd);
 **		#1.  The integer to output.
 **		#2.  The file descriptor on which to write.
+**
+**	External functs - write
 */
 
 #include "libft.h"
