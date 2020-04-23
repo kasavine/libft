@@ -1,36 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strncpy_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/21 15:56:08 by isak              #+#    #+#             */
-/*   Updated: 2020/04/22 18:46:17 by isak             ###   ########.fr       */
+/*   Created: 2020/02/26 10:49:12 by isak              #+#    #+#             */
+/*   Updated: 2020/04/22 18:51:33 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-**	strlcpy -- size-bounded string copying and concatenation
-*/
-
 #include "libft.h"
 
-size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize)
+char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
-	size_t src_len;
+	size_t i;
 
-	if (!dst || !src)
-		return (0);
-	src_len = ft_strlen(src);
-	if (dstsize != 0)
+	i = 0;
+	while (src[i] && i < len)
 	{
-		while (*src && dstsize > 1)
-		{
-			*dst++ = *src++;
-			dstsize--;
-		}
-		*dst = '\0';
+		dst[i] = src[i];
+		i++;
 	}
-	return (src_len);
+	while (i < len)
+	{
+		dst[i] = '\0';
+		i++;
+	}
+	return (dst);
 }

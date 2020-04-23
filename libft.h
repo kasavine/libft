@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 13:05:55 by isak              #+#    #+#             */
-/*   Updated: 2020/04/22 11:09:28 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/22 18:51:11 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int			ft_tolower(int c);
 
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
-//3
+char		*ft_strtrim(char const *s1, char const *set);
 //4
 //5
 
@@ -77,7 +77,7 @@ void		ft_putnbr_fd(int n, int fd);
 /*
 **	Extra funcs
 */
-
+char		*ft_strncpy(char *dst, const char *src, size_t len);
 char		*ft_strcpy(char *dst, const char *src);
 char		*ft_strcat(char *dst, const char *src);
 

@@ -6,7 +6,7 @@
 #    By: isak <isak@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/25 13:07:57 by isak              #+#    #+#              #
-#    Updated: 2020/04/22 13:08:51 by isak             ###   ########.fr        #
+#    Updated: 2020/04/22 18:51:58 by isak             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,12 +27,12 @@ SRC			= ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c \
 				ft_atoi.c \
 				ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 				ft_toupper.c ft_tolower.c \
-				ft_substr.c ft_strjoin.c\
+				ft_substr.c ft_strjoin.c ft_strtrim.c\
 				ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 OBJ 		= $(SRC:%.c=%.o)
 
-BONUS_SRC	= ft_strcpy_bonus.c ft_strcat_bonus.c
+BONUS_SRC	= ft_strcpy_bonus.c ft_strcat_bonus.c ft_strncpy_bonus.c
 
 BONUS_OBJ	= $(BONUS_SRC:%.c=%.o)
 

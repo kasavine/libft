@@ -4,7 +4,7 @@ Re-writing highly useful standard functions, C language.
 |---|---|---|---|
 | ft_memSET  | ft_strMAPi  | ft_lstNEW  | ft_strcat |
 | ft_bzero | ft_SUBstr  | ft_lstADD_front | ft_strcpy |
-| ft_memCPY | ft_strJOIN | ft_lstSIZE  |   |
+| ft_memCPY | ft_strJOIN | ft_lstSIZE  | ft_strncpy |
 | ft_memCCPY | ft_strTRIM  | ft_lstLAST  |   |
 | ft_memMOVE | ft_strSPLIT | ft_lstADD_back  |   |
 | ft_memCHR | ft_itoa  | ft_lstDELone |   |
