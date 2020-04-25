@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:05:53 by isak              #+#    #+#             */
-/*   Updated: 2020/04/23 13:58:53 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/25 16:20:17 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,13 +62,8 @@ static	int		ft_word_len(char const *s, char c, int pos, int len)
 	return (len - pos);
 }
 
-char			**ft_split(char const *s, char c)
+static	char	**ft_init_res(char const *s, char c)
 {
-	int			cur_state;
-	int			cur_word;
-	size_t		cur_index;
-	int			prev_state;
-	int			word_len;
 	char		**res;
 
 	if (!s)
@@ -76,13 +71,24 @@ char			**ft_split(char const *s, char c)
 	res = (char **)malloc(sizeof(char *) * ft_count_words(s, c, ft_strlen(s)));
 	if (!res)
 		return (NULL);
+	return (res);
+}
+
+char			**ft_split(char const *s, char c)
+{
+	int			cur_word;
+	size_t		cur_index;
+	int			word_len;
+	char		**res;
+
+	res = ft_init_res(s, c);
+	if (!res)
+		return (NULL);
 	cur_word = 0;
 	cur_index = 0;
-	prev_state = 2;
 	while (cur_index != ft_strlen(s))
 	{
-		cur_state = s[cur_index] == c ? 2 : 1;
-		if (cur_state == 1 && prev_state == 2)
+		if (s[cur_index] != c && (cur_index == 0 || s[cur_index - 1] == c))
 		{
 			word_len = ft_word_len(s, c, cur_index, ft_strlen(s));
 			res[cur_word] = malloc(sizeof(char) * word_len + 1);
@@ -92,7 +98,6 @@ char			**ft_split(char const *s, char c)
 			res[cur_word++][word_len] = '\0';
 		}
 		cur_index++;
-		prev_state = cur_state;
 	}
 	return (res);
 }
