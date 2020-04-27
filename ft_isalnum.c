@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 11:56:48 by isak              #+#    #+#             */
-/*   Updated: 2020/04/21 10:14:15 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:14:33 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 **	The isalnum() function returns zero if the character tests false and
 **		returns non-zero if the character tests true.
 */
-
-#include "libft.h"
 
 int		ft_isalnum(int c)
 {

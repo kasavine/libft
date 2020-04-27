@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/23 15:57:30 by isak              #+#    #+#             */
-/*   Updated: 2020/04/23 16:31:57 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:18:01 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void		ft_lstclear(t_list **lst, void (*del)(void*))
 
 	if (*lst == NULL)
 		return ;
-	while(*lst)
+	while (*lst)
 	{
 		tmp = (*lst)->next;
 		ft_lstdelone(*lst, del);

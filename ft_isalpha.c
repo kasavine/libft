@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 11:27:28 by isak              #+#    #+#             */
-/*   Updated: 2020/04/21 10:14:16 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:14:43 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 **	The isalpha() function returns zero if the character tests false and
 **		returns non-zero if the character tests true.
 */
-
-#include "libft.h"
 
 int		ft_isalpha(int c)
 {

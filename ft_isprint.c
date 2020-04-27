@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 12:21:34 by isak              #+#    #+#             */
-/*   Updated: 2020/04/21 10:19:23 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:15:01 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 **	The isprint() function returns zero if the character tests false and
 **		returns non-zero if the character tests true.
 */
-
-#include "libft.h"
 
 int		ft_isprint(int c)
 {
