@@ -6,22 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 11:52:57 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:23:00 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:23:57 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	strnstr -- locate a substring in a string
-**
-**	The strnstr() function locates the first occurrence of the null-termi-
-**		nated string needle in the string haystack, where not more than len
-**		characters are searched.  Characters that appear after a `\0' character
-**		are not searched.
-**
-**	If needle is an empty string, haystack is returned; if needle occurs
-**		nowhere in haystack, NULL is returned; otherwise a pointer to the first
-**		character of the first occurrence of needle is returned.
-*/
 
 #include "libft.h"
 

@@ -6,18 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/23 16:33:12 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:18:10 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:21:11 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	Iterates the list ’lst’ and applies the function ’f’ to the content
-**		of each element.
-**
-**	void ft_lstiter(t_list *lst, void (*f)(void *));
-**		#1.  The adress of a pointer to an element.
-**		#2.  The adress of the function used to iterate on the list.
-*/
 
 #include "libft.h"
 

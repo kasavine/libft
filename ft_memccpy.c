@@ -6,19 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 10:23:35 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:19:19 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:21:43 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	memccpy -- copy string until character found
-**
-**	The memccpy() function copies bytes from string src to string dst.  If
-**		the character c (as converted to an unsigned char) occurs in the
-**		string src, the copy stops and a pointer to the byte after the copy
-**		of c in the string dst is returned.  Otherwise, n bytes are copied,
-**		and a NULL pointer is returned.
-*/
 
 #include "libft.h"
 

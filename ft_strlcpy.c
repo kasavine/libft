@@ -6,13 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 15:56:08 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:21:59 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:23:23 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	strlcpy -- size-bounded string copying and concatenation
-*/
 
 #include "libft.h"
 
