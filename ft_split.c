@@ -6,13 +6,13 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:05:53 by isak              #+#    #+#             */
-/*   Updated: 2020/04/28 16:33:38 by isak             ###   ########.fr       */
+/*   Updated: 2020/05/05 20:40:49 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_count_words(const char *s, char c)
+static int		count_words(const char *s, char c)
 {
 	int			cur_index;
 	int			cur_state;
@@ -33,11 +33,26 @@ static int		ft_count_words(const char *s, char c)
 	return (cur_index);
 }
 
-static char		*ft_find_word(const char *s, int start, int end)
+static void		free_split_words(char **res_of_split, int words)
+{
+	while (words >= 0)
+	{
+		free(res_of_split[words]);
+		words--;
+	}
+	free(res_of_split);
+	res_of_split = NULL;
+}
+
+static char		*get_word(const char *s, int start, char c)
 {
 	char		*res;
 	int			i;
+	int			end;
 
+	end = start;
+	while (s[end] && s[end] != c)
+		end++;
 	i = 0;
 	if (!(res = malloc((end - start) * sizeof(char))))
 		return (NULL);
@@ -51,23 +66,24 @@ char			**ft_split(char const *s, char c)
 {
 	size_t		i;
 	size_t		j;
-	int			cur_index;
 	char		**res_of_split;
 
 	if (!s || !(res_of_split = malloc((
-			ft_count_words(s, c) + 1) * sizeof(char *))))
+			count_words(s, c) + 1) * sizeof(char *))))
 		return (NULL);
 	i = 0;
 	j = 0;
-	cur_index = -1;
-	while (i <= ft_strlen(s))
+	while (i < ft_strlen(s))
 	{
-		if (s[i] != c && cur_index < 0)
-			cur_index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && cur_index >= 0)
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
 		{
-			res_of_split[j++] = ft_find_word(s, cur_index, i);
-			cur_index = -1;
+			res_of_split[j] = get_word(s, i, c);
+			if (!res_of_split[j])
+			{
+				free_split_words(res_of_split, j - 1);
+				return (NULL);
+			}
+			j++;
 		}
 		i++;
 	}
