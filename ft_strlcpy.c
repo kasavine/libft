@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 15:56:08 by isak              #+#    #+#             */
-/*   Updated: 2020/05/06 17:54:02 by isak             ###   ########.fr       */
+/*   Updated: 2020/05/07 14:13:37 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	if (dstsize == 0)
 		return (src_len);
 	while (*src && dstsize > 1)
-		{
-			*dst++ = *src++;
-			dstsize--;
-		}
+	{
+		*dst++ = *src++;
+		dstsize--;
+	}
 	*dst = '\0';
 	return (src_len);
 }

@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:05:53 by isak              #+#    #+#             */
-/*   Updated: 2020/05/06 19:37:02 by isak             ###   ########.fr       */
+/*   Updated: 2020/05/07 14:12:20 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char			**ft_split(char const *s, char c)
 	size_t		word_len;
 	char		**res_of_split;
 
-	if (!s || !(res_of_split = 
+	if (!s || !(res_of_split =
 			(char **)malloc((count_words(s, c) + 1) * sizeof(char *))))
 		return (NULL);
 	i = 0;
@@ -55,10 +55,8 @@ char			**ft_split(char const *s, char c)
 				word_len = ft_strchr(s, c) - s;
 			res_of_split[i++] = ft_substr(s, 0, word_len);
 			s = s + word_len;
-			
 		}
 	}
-	
 	res_of_split[i] = NULL;
 	return (res_of_split);
 }
