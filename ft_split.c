@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:05:53 by isak              #+#    #+#             */
-/*   Updated: 2020/05/05 20:40:49 by isak             ###   ########.fr       */
+/*   Updated: 2020/05/06 19:37:02 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,60 +33,32 @@ static int		count_words(const char *s, char c)
 	return (cur_index);
 }
 
-static void		free_split_words(char **res_of_split, int words)
-{
-	while (words >= 0)
-	{
-		free(res_of_split[words]);
-		words--;
-	}
-	free(res_of_split);
-	res_of_split = NULL;
-}
-
-static char		*get_word(const char *s, int start, char c)
-{
-	char		*res;
-	int			i;
-	int			end;
-
-	end = start;
-	while (s[end] && s[end] != c)
-		end++;
-	i = 0;
-	if (!(res = malloc((end - start) * sizeof(char))))
-		return (NULL);
-	while (start < end)
-		res[i++] = s[start++];
-	res[i] = '\0';
-	return (res);
-}
-
 char			**ft_split(char const *s, char c)
 {
-	size_t		i;
-	size_t		j;
+	int			i;
+	size_t		word_len;
 	char		**res_of_split;
 
-	if (!s || !(res_of_split = malloc((
-			count_words(s, c) + 1) * sizeof(char *))))
+	if (!s || !(res_of_split = 
+			(char **)malloc((count_words(s, c) + 1) * sizeof(char *))))
 		return (NULL);
 	i = 0;
-	j = 0;
-	while (i < ft_strlen(s))
+	while (*s)
 	{
-		if (s[i] != c && (i == 0 || s[i - 1] == c))
+		while (*s == c && *s)
+			s++;
+		if (*s)
 		{
-			res_of_split[j] = get_word(s, i, c);
-			if (!res_of_split[j])
-			{
-				free_split_words(res_of_split, j - 1);
-				return (NULL);
-			}
-			j++;
+			if (!ft_strchr(s, c))
+				word_len = ft_strlen(s);
+			else
+				word_len = ft_strchr(s, c) - s;
+			res_of_split[i++] = ft_substr(s, 0, word_len);
+			s = s + word_len;
+			
 		}
-		i++;
 	}
-	res_of_split[j] = 0;
+	
+	res_of_split[i] = NULL;
 	return (res_of_split);
 }
