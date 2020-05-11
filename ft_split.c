@@ -6,98 +6,57 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:05:53 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:21:06 by isak             ###   ########.fr       */
+/*   Updated: 2020/05/07 14:12:20 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-**	Allocates (with malloc(3)) and returns an array of strings obtained by
-**		splitting ’s’ using the character ’c’ as a delimiter.  The array
-**		must be ended by a NULL pointer.
-**
-**	char **ft_split(char const *s, char c);
-**		#1.  The string to be split.
-**		#2.  The delimiter character.
-**
-**	Return value - The array of new strings resulting from the split.
-**		NULL if the allocation fails.
-**
-**	External functs - malloc, free
-*/
-
 #include "libft.h"
 
-static	int		ft_count_words(char const *s, char c, int len)
+static int		count_words(const char *s, char c)
 {
-	int			prev_state;
-	int			word_count;
 	int			cur_index;
 	int			cur_state;
 
-	prev_state = 2;
-	word_count = 0;
 	cur_index = 0;
-	while (cur_index != len)
+	cur_state = 0;
+	while (*s)
 	{
-		cur_state = s[cur_index] == c ? 2 : 1;
-		if (cur_state == 1 && prev_state == 2)
-			word_count++;
-		cur_index++;
-		prev_state = cur_state;
+		if (*s != c && cur_state == 0)
+		{
+			cur_state = 1;
+			cur_index++;
+		}
+		else if (*s == c)
+			cur_state = 0;
+		s++;
 	}
-	return (word_count);
-}
-
-static	int		ft_word_len(char const *s, char c, int pos, int len)
-{
-	int			index;
-
-	index = pos + 1;
-	while (index < len)
-	{
-		if (s[index] == c)
-			return (index - pos);
-		index++;
-	}
-	return (len - pos);
-}
-
-static	char	**ft_init_res(char const *s, char c)
-{
-	char		**res;
-
-	if (!s)
-		return (NULL);
-	res = (char **)malloc(sizeof(char *) * ft_count_words(s, c, ft_strlen(s)));
-	if (!res)
-		return (NULL);
-	return (res);
+	return (cur_index);
 }
 
 char			**ft_split(char const *s, char c)
 {
-	int			cur_word;
-	size_t		cur_index;
-	int			word_len;
-	char		**res;
+	int			i;
+	size_t		word_len;
+	char		**res_of_split;
 
-	res = ft_init_res(s, c);
-	if (!res)
+	if (!s || !(res_of_split =
+			(char **)malloc((count_words(s, c) + 1) * sizeof(char *))))
 		return (NULL);
-	cur_word = 0;
-	cur_index = 0;
-	while (cur_index != ft_strlen(s))
+	i = 0;
+	while (*s)
 	{
-		if (s[cur_index] != c && (cur_index == 0 || s[cur_index - 1] == c))
+		while (*s == c && *s)
+			s++;
+		if (*s)
 		{
-			word_len = ft_word_len(s, c, cur_index, ft_strlen(s));
-			res[cur_word] = malloc(sizeof(char) * word_len + 1);
-			if (res[cur_word] == NULL)
-				return (NULL);
-			ft_strncpy(res[cur_word], s + cur_index, word_len);
-			res[cur_word++][word_len] = '\0';
+			if (!ft_strchr(s, c))
+				word_len = ft_strlen(s);
+			else
+				word_len = ft_strchr(s, c) - s;
+			res_of_split[i++] = ft_substr(s, 0, word_len);
+			s = s + word_len;
 		}
-		cur_index++;
 	}
-	return (res);
+	res_of_split[i] = NULL;
+	return (res_of_split);
 }

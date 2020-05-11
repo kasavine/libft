@@ -6,16 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 11:16:54 by isak              #+#    #+#             */
-/*   Updated: 2020/04/23 19:49:26 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:19:35 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	atoi -- convert ASCII string to integer
-**
-**	The atoi() function converts the initial portion of the string pointed to
-**		by str to int representation.
-*/
 
 #include "libft.h"
 

@@ -6,20 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 10:24:18 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:20:13 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:21:55 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	memcmp -- compare byte string
-**
-**	The memcmp() function compares byte string s1 against byte string s2.
-**		Both strings are assumed to be n bytes long.
-**	The memcmp() function returns zero if the two strings are identical, oth-
-**		erwise returns the difference between the first two differing bytes
-**		(treated as unsigned char values, so that `\200' is greater than `\0',
-**		for example).  Zero-length strings are always identical.
-*/
 
 #include "libft.h"
 
