@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:07:19 by isak              #+#    #+#             */
-/*   Updated: 2020/05/06 18:06:40 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/28 12:33:53 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,22 @@
 
 char		*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*fresh;
+	char	*fresh_new;
+	size_t	i;
+	size_t	j;
 
 	if (!s)
 		return (NULL);
-	fresh = (char *)malloc((len + 1) * sizeof(char));
-	if (fresh == NULL)
+	i = 0;
+	fresh_new = (char *)malloc((len + 1) * sizeof(char));
+	if (fresh_new == NULL)
 		return (NULL);
-	if (start >= ft_strlen(s))
-		ft_bzero(fresh, len + 1);
-	else
+	i = start;
+	j = 0;
+	while (i < ft_strlen(s) && j < len)
 	{
-		s += start;
-		ft_strlcpy(fresh, s, len + 1);
+		fresh_new[j++] = s[i++];
 	}
-	return (fresh);
+	fresh_new[j] = '\0';
+	return (fresh_new);
 }

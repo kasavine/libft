@@ -6,7 +6,7 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 10:23:35 by isak              #+#    #+#             */
-/*   Updated: 2020/05/07 16:14:31 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:21:43 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ void		*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		if (*src_copy++ == (unsigned char)c)
 			return (dst_copy);
 	}
-	return (NULL);
+	return (0);
 }
