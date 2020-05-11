@@ -6,9 +6,18 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 10:24:31 by isak              #+#    #+#             */
-/*   Updated: 2020/04/27 14:22:00 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:20:20 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	memcpy -- copy memory area
+**
+**	The memcpy() function copies n bytes from memory area src to memory area
+**		dst.  If dst and src overlap, behavior is undefined.
+**
+**	The memcpy() function returns the original value of dst.
+*/
 
 #include "libft.h"
 

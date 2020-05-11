@@ -6,9 +6,22 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/23 14:33:02 by isak              #+#    #+#             */
-/*   Updated: 2020/04/27 14:21:32 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:18:27 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Allocates (with malloc(3)) and returns a new element.  The variable
+**		'content’ is initialized with the value of the parameter ’content’.
+**		The variable ’next’ is initialized to NULL.
+**
+**	t_list *ft_lstnew(void *content);
+**		#1.  The content to create the new element with.
+**
+**	Return value - The new element.
+**
+**	External functs - malloc
+*/
 
 #include "libft.h"
 

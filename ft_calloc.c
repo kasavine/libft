@@ -6,9 +6,20 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 14:20:27 by isak              #+#    #+#             */
-/*   Updated: 2020/04/27 14:19:53 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/23 13:44:26 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	calloc -- memory allocation
+**
+**	The calloc() function contiguously allocates enough space for count
+**		objects that are size bytes of memory each and returns a pointer to the
+**		allocated memory.  The allocated memory is filled with bytes of value
+**		zero.
+**
+**	External functs - malloc
+*/
 
 #include "libft.h"
 

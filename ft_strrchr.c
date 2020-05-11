@@ -6,9 +6,19 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 11:01:15 by isak              #+#    #+#             */
-/*   Updated: 2020/04/27 14:24:03 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:22:57 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	strrchr -- locates character in string
+**
+**	The strrchr() function is identical to strchr(), except it locates the
+**		last occurrence of c.
+**
+**	The function strrchr() return a pointer to the located
+**		character, or NULL if the character does not appear in the string.
+*/
 
 #include "libft.h"
 

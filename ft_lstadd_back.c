@@ -6,9 +6,17 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/23 15:09:27 by isak              #+#    #+#             */
-/*   Updated: 2020/04/27 14:20:46 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:16:39 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Adds the element ’new’ at the end of the list.
+**
+**	void ft_lstadd_back(t_list **lst, t_list *new);
+**		#1.  The address of a pointer to the first link of a list.
+**		#2.  The address of a pointer to the element to be added to the list.
+*/
 
 #include "libft.h"
 

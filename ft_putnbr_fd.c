@@ -6,9 +6,19 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 10:03:27 by isak              #+#    #+#             */
-/*   Updated: 2020/04/27 14:22:30 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:21:00 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Outputs the integer ’n’ to the given file descriptor.
+**
+**	void ft_putnbr_fd(int n, int fd);
+**		#1.  The integer to output.
+**		#2.  The file descriptor on which to write.
+**
+**	External functs - write
+*/
 
 #include "libft.h"
 

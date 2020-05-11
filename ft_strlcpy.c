@@ -6,9 +6,13 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 15:56:08 by isak              #+#    #+#             */
-/*   Updated: 2020/05/07 14:13:37 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/26 20:21:59 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	strlcpy -- size-bounded string copying and concatenation
+*/
 
 #include "libft.h"
 
@@ -19,13 +23,14 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	if (!dst || !src)
 		return (0);
 	src_len = ft_strlen(src);
-	if (dstsize == 0)
-		return (src_len);
-	while (*src && dstsize > 1)
+	if (dstsize != 0)
 	{
-		*dst++ = *src++;
-		dstsize--;
+		while (*src && dstsize > 1)
+		{
+			*dst++ = *src++;
+			dstsize--;
+		}
+		*dst = '\0';
 	}
-	*dst = '\0';
 	return (src_len);
 }
