@@ -6,21 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 12:18:37 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:21:40 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:22:59 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	strcpy -- copy strings
-**
-**	The strcpy() function copy the string src to dst (including the terminating
-**	`\0' character.)
-**
-**	The source and destination strings should not overlap, as the behavior is
-**		undefined.
-**
-**	The strcpy() function returns dst.
-*/
 
 #include "libft.h"
 

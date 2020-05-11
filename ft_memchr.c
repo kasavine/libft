@@ -6,19 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 10:23:59 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:19:28 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:21:48 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	memchr -- locate byte in byte string
-**
-**	The memchr() function locates the first occurrence of c (converted to an
-**		unsigned char) in string s.
-**
-**	The memchr() function returns a pointer to the byte located, or NULL if
-**		no such byte exists within n bytes.
-*/
 
 #include "libft.h"
 

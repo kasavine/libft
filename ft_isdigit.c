@@ -6,16 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 11:48:32 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:14:56 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:20:22 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**	The isdigit() function tests for a decimal digit character.
-**
-**	The isdigit() function return zero if the character tests
-**		false and return non-zero if the character tests true.
-*/
 
 int		ft_isdigit(int c)
 {

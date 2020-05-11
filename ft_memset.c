@@ -6,15 +6,9 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 10:24:55 by isak              #+#    #+#             */
-/*   Updated: 2020/04/26 20:20:42 by isak             ###   ########.fr       */
+/*   Updated: 2020/04/27 14:22:10 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-**		The memset() function writes len bytes of value c (converted to an
-**			unsigned char) to the string b.
-**		The memset() function returns its first argument.
-*/
 
 #include "libft.h"
 
