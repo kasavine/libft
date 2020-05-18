@@ -6,21 +6,22 @@
 /*   By: isak <isak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 10:24:55 by isak              #+#    #+#             */
-/*   Updated: 2020/04/27 14:22:10 by isak             ###   ########.fr       */
+/*   Updated: 2020/05/14 20:50:30 by isak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		*ft_memset(void *b, int c, size_t len)
+void				*ft_memset(void *b, int c, size_t len)
 {
-	size_t	i;
+	unsigned char	*ptr_b;
 
-	i = 0;
-	while (i < len)
+	ptr_b = (unsigned char *)b;
+	while (len > 0)
 	{
-		((char *)b)[i] = (unsigned char)c;
-		i++;
+		*ptr_b = c;
+		len--;
+		ptr_b++;
 	}
 	return (b);
 }
