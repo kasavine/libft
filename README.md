@@ -7,11 +7,11 @@ How to use?
 - make bonus (libft.a library with additional bonus functions)
 - make fclean ()
 
-| Part 1  |||
+| Part 1  ||returns|
 |---|---|---|
-| ft_memSET | writes len bytes of value c (converted to an unsigned char) to the string b | returns its first argument |
-| ft_bzero | writes n zeroed bytes to the string s.  If n is zero, bzero() does nothing. ||
-| ft_memCPY |||
+| ft_memSET |writes len bytes of value c (converted to an unsigned char) to the string b|its first argument|
+| ft_bzero |writes n zeroed bytes to the string s.  If n is zero, bzero() does nothing.||
+| ft_memCPY |copies n bytes from memory area src to memory area dst. If dst and src overlap, behavior is undefined.|the original value of dst|
 | ft_memCCPY |||
 | ft_memMOVE |||
 | ft_memCHR |||
