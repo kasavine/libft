@@ -1,11 +1,11 @@
 # 42-libft-functions
 Re-writing highly useful standard functions, C language.
 How to use?
-`git clone https://github.com/kasavine/42-libft-functions.git``\n`
-`cd 42-libft-functions``\n`
-`make all`(libft.a library with Part 1 and Part 2 functions)`\n`
-`make bonus` (libft.a library with additional bonus functions)`\n`
-`make fclean` ()`\n`
+- `git clone https://github.com/kasavine/42-libft-functions.git`
+- `cd 42-libft-functions`
+- `make all`(libft.a library with Part 1 and Part 2 functions)
+- `make bonus` (libft.a library with additional bonus functions)
+- `make fclean` ()
 
 | Part 1  |||
 |---|---|---|
