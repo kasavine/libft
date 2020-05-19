@@ -15,7 +15,7 @@ How to use?
 |ft_memCCPY|The memccpy() function copies bytes from string src to string dst. If the character c (as converted to an unsigned char) occurs in the string src, the copy stops and a pointer to the byte after the copy of c in the string dst is returned.  Otherwise, n bytes are copied, and a NULL pointer is returned. The source and destination strings should not overlap, as the behavior is undefined.||
 |ft_memMOVE|The memmove() function copies len bytes from string src to string dst. The two strings may overlap; the copy is always done in a non-destructive manner. Returns the original value of dst||
 |ft_memCHR|The memchr() function locates the first occurrence of c (converted to an unsigned char) in string s. Returns a pointer to the byte located, or NULL if no such byte exists within n bytes||
-| ft_memCMP |||
+| ft_memCMP |The memcmp() function compares byte string s1 against byte string s2. Both strings are assumed to be n bytes long. The memcmp() function returns zero if the two strings are identical, otherwise returns the difference between the first two differing bytes (treated as unsigned char values, so that `\200' is greater than `\0', for example).  Zero-length strings are always identical.||
 | ft_calloc |||
 | ft_strLEN |||
 | ft_strLCPY |||
