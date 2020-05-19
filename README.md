@@ -9,7 +9,7 @@ How to use?
 
 | Part 1  | 
 |---|
-| ft_memSET |
+| ft_memSET | writes len bytes of value c (converted to an unsigned char) to the string b | returns its first argument |
 | ft_bzero |
 | ft_memCPY |
 | ft_memCCPY |
