@@ -2,16 +2,16 @@
 Re-writing highly useful standard functions, C language.
 
 > How to use?
-
-	>> git clone https://github.com/kasavine/42-libft-functions.git
-
-	>> cd 42-libft-functions
-
-	>> make all (libft.a library with Part 1 and Part 2 functions)
-
-	>> make bonus (libft.a library with additional bonus functions)
-
-	>> make fclean ()
+>
+> git clone https://github.com/kasavine/42-libft-functions.git
+>
+> cd 42-libft-functions
+>
+> make all (libft.a library with Part 1 and Part 2 functions)
+>
+> make bonus (libft.a library with additional bonus functions)
+>
+> make fclean ()
 
 | Part 1  ||
 |---|---|
