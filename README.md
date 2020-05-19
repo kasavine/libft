@@ -1,5 +1,6 @@
 # 42-libft-functions
-Re-writing highly useful standard functions, C language, C library.
+## C language, C library
+Re-writing useful standard functions .
 
 ```bash
 git clone https://github.com/kasavine/42-libft-functions.git
