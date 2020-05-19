@@ -1,6 +1,8 @@
 # 42-libft-functions
+
 ## C language, C library
-Re-writing useful standard functions .
+
+Re-writing useful standard functions.
 
 ```bash
 git clone https://github.com/kasavine/42-libft-functions.git
@@ -37,7 +39,6 @@ make fclean
 | ft_toupper | The toupper() function converts a lower-case letter to the corresponding upper-case letter.  The argument must be representable as an unsigned char or the value of EOF. If the argument is a lower-case letter, the toupper() function returns the corresponding upper-case letter if there is one; otherwise, the argument is returned unchanged. |
 | ft_tolower | The tolower() function converts an upper-case letter to the corresponding lower-case letter.  The argument must be representable as an unsigned char or the value of EOF. If the argument is an upper-case letter, the tolower() function returns the corresponding lower-case letter if there is one; otherwise, the argument is returned unchanged. |
 
-
 | Part 2 ||
 |---|---|
 | ft_strMAPi | Applies the function ’f’ to each character of the string ’s’ to create a new string (with malloc(3)) resulting from successive applications of ’f’. Return value: The string created from the successive applications of ’f’.  Returns NULL if the allocation fails. |
@@ -50,10 +51,9 @@ make fclean
 | ft_putSTR_fd | Outputs the string ’s’ to the given file descriptor. Return value: None |
 | ft_putENDL_fd | Outputs the string ’s’ to the given file descriptor, followed by a newline. Return value: None |
 | ft_putNBR_fd | Outputs the integer ’n’ to the given file descriptor. Return value: None |
-| ft_strcat	||
-| ft_strcpy ||
-| ft_strncpy ||
-
+| ft_strcat | The strcat() function appends a copy of the null-terminated string s2 to the end of the null-terminated string s1, then add a terminating `\0'.  The string s1 must have sufficient space to hold the result. The source and destination strings should not overlap, as the behavior is undefined. Returns the pointer s1. |
+| ft_strcpy | The strcpy() function copies the string src to dst (including the terminating `\0' character.) The source and destination strings should not overlap, as the behavior is undefined. The strcpy()  function returns dst. |
+| ft_strncpy | The strncpy() function copies at most len characters from src into dst.  If src is less than len characters long, the remainder of dst is filled with `\0' characters.  Otherwise, dst is not terminated. The source and destination strings should not overlap, as the behavior is undefined. The strncpy() function return dst. |
 
 | Bonus | |
 |---|---|
