@@ -8,7 +8,7 @@ How to use?
 - make fclean ()
 
 | Part 1  |||
-|---|||
+|---|---|---|
 | ft_memSET | writes len bytes of value c (converted to an unsigned char) to the string b | returns its first argument |
 | ft_bzero | writes n zeroed bytes to the string s.  If n is zero, bzero() does nothing. ||
 | ft_memCPY |||
@@ -36,7 +36,7 @@ How to use?
 
 
 | Part 2 |||
-|---|||
+|---|---|---|
 | ft_strMAPi |||
 | ft_SUBstr |||
 | ft_strJOIN |||
@@ -53,7 +53,7 @@ How to use?
 
 
 |  Bonus |||
-|---|||
+|---|---|---|
 | ft_lstNEW |||
 | ft_lstADD_front |||
 | ft_lstSIZE |||
