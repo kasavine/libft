@@ -11,6 +11,11 @@ make all
 make bonus
 make fclean
 ```
+To test your lib use:
+1. my-tests: 
+2. Libftest: https://github.com/jtoty/Libftest
+3. libft-unit-test: https://github.com/alelievr/libft-unit-test
+4. libft-war-machine: https://github.com/ska42/libft-war-machine
 
 | Part 1  ||
 |---|---|
