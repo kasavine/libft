@@ -5,8 +5,8 @@
 Re-writing useful standard functions.
 
 ```bash
-git clone https://github.com/kasavine/42-libft-functions.git
-cd 42-libft-functions
+git clone https://github.com/kasavine/libft.git
+cd libft
 make all
 make bonus
 make fclean
