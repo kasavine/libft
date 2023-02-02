@@ -1,17 +1,19 @@
-# 42-libft-functions
+# Libft functions
+This project is a library written in C language, which contains (reiwritten) all the commonly used C functions.
+
+## Features
+* Collection of functions that are essential for C programming
+* Includes functions for input/output, string manipulation, memory management, and more* 
 
 ## C language, C library
+* Clone the repository to your local machine `git clone https://github.com/kasavine/libft.git`
+* Change directory `cd libft`
+* Use make
+  * `make all`
+  * `make bonus`
+  * `make fclean`
 
-Re-writing useful standard functions.
-
-```bash
-git clone https://github.com/kasavine/libft.git
-cd libft
-make all
-make bonus
-make fclean
-```
-To test your lib use:
+## For testing purposes:
 1. my-tests: 
 2. Libftest: https://github.com/jtoty/Libftest
 3. libft-unit-test: https://github.com/alelievr/libft-unit-test
